@@ -10,6 +10,7 @@ try:
     # Read the content from the original file
     with open(myfile, "r") as file:
         x= file.read()
+        print(x)
 
     # Modify the content (e.g., convert text to uppercase)
     y=x.upper() 
@@ -17,8 +18,9 @@ try:
     # Write the modified content to the new file
     with open(myfile2, "w") as file:
         file.write(y)
+  
 
-    print("This are read and modified files")
+   print("This are read and modified files")
 
 except FileNotFoundError:
     print('File not found')
