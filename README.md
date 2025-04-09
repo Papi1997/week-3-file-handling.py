@@ -25,7 +25,7 @@ try:
 except FileNotFoundError:
     print('File not found')
 except Exception as e:
-    print(f"Error occured")
+    print(f"Error occured")  #using f string 
 
 
 
@@ -47,7 +47,7 @@ except FileNotFoundError:
 except PermissionError:
     print('This file could not be opened due to permission issues.')
 except Exception as e:
-    print(f"An error occurred: {e}")
+    print(f"An error occurred: {e}") #Additional f string formatting
 
 
 
