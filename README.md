@@ -10,7 +10,7 @@ try:
     # Read the content from the original file
     with open(myfile, "r") as file:
         x= file.read()
-        print(x)
+        print(x)  # you can also use print(file.read()) directly  instead of assigning the read to x variable.
 
     # Modify the content (e.g., convert text to uppercase)
     y=x.upper() 
