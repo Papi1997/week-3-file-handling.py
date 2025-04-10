@@ -25,7 +25,7 @@ try:
 except FileNotFoundError:
     print('File not found')
 except Exception as e:
-    print(f"Error occured")  #using f string 
+    print(f"Error occured")  #using f string formatting
 
 
 
@@ -33,7 +33,7 @@ except Exception as e:
 #Question 2. Error Handling Lab .Ask the user for a filename and handle errors if it doesn’t exist or can’t be read.
 
 
-x = input("Kindly enter file to read: ")
+x = input("Kindly enter file to read: ")  # The file to be read below.Notice the file inputted will be assigned to variable x
 
 try:
     # Try to open and read the file
@@ -43,11 +43,11 @@ try:
         print(material)
 
 except FileNotFoundError:
-    print(f"File '{x}' not found.")
+    print(f"File '{x}' not found.")    #Additional f string formatting
 except PermissionError:
     print('This file could not be opened due to permission issues.')
 except Exception as e:
-    print(f"An error occurred: {e}") #Additional f string formatting
+    print(f"An error occurred: {e}")    #Additional f string formatting
 
 
 
